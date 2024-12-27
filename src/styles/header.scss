@@ -1,0 +1,59 @@
+@import "./responsive.scss";
+
+.header-main-container {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .link-main-container {
+    display: flex; 
+    align-items: center;
+    gap: 24px;
+    
+    @include md {
+      display: flex;
+    }
+    
+    @include sm {
+      display: none;
+    }
+  }
+
+  .quota-button {
+    background-color: var(--primary-blue);
+    color: var(--white-text);
+    border-radius: 80px;
+    padding: 10px 19px;
+    font-size: var(--small);
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .mobile-nav {
+    @include xl {
+      display: none;
+    }
+
+    @include lg {
+      display: none;
+    }
+ 
+    @include md {
+      display: none;
+    }
+
+    @include sm {
+      display: flex;
+      align-items: center;
+      gap: 19px;
+    }
+
+  }
+}

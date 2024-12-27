@@ -1,0 +1,147 @@
+@import "./responsive.scss";
+
+.hero-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 72px;
+  margin-right: 72px;
+
+  @include ms {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+
+  @include sm {
+    margin-top: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+.flex-container {
+  display: flex;
+  gap: 80px;
+
+  @include ms {
+    flex-direction: column;
+  }
+
+  @include md {
+
+  }
+
+  @include sm {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.hero-image {
+  width: 448px;
+  height: 520px;
+  border-radius: 16px;
+  object-fit: cover;
+
+  @include ms {
+    width: 664px;
+    height: 480px;
+  }
+
+  @include sm {
+    width: 400px;
+    height: 240px;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-title {
+  font-size: var(--heading-two);
+  font-weight: bold;
+  line-height: 72px;
+
+  @include ms {
+    font-size: var(--heading-three);
+  }
+
+  @include sm {
+    font-size: var(--heading-four);
+    line-height: 48px;
+  }
+}
+
+.hero-description {
+  color: var(--body-text);
+  font-size: var(--large);
+  line-height: 32px;
+  font-weight: normal;
+
+}
+
+.hero-input-container {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .hero-input {
+    width: 454px;
+    height: 48px;
+    border-radius: 16px;
+    padding-left: 20px;
+    border: 0.5px solid var(--body-text);
+
+    @include sm {
+      width: 174px;
+    }
+  }
+
+  .hero-search-button {
+    border: none;
+    outline: none;
+    background-color: var(--primary-blue);
+    color: var(--white-text);
+    border-radius: 80px;
+    width: 130px;
+    height: 48px;
+    cursor: pointer;
+    font-size: var(--large);
+    line-height: 32px;
+    font-weight: 600; /* Semi-Bold */
+  }
+}
+
+.hero-awards-container {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+
+  @include sm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .awards-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-award-title {
+    font-size: var(--heading-four);
+    color: var(--title-text);
+    font-weight: bold;
+    line-height: 48px;
+  }
+
+  .hero-award-description {
+    font-size: var(--large);
+    color: var(--body-text);
+    line-height: 32px;
+    font-weight: normal;
+  }
+}
