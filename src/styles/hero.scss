@@ -11,6 +11,10 @@
     margin-right: 40px;
   }
 
+  @include md {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 
   @include sm {
     margin-top: 32px;
@@ -28,7 +32,7 @@
   }
 
   @include md {
-
+    gap: 20px;
   }
 
   @include sm {
@@ -69,6 +73,11 @@
     font-size: var(--heading-three);
   }
 
+  @include md {
+    font-size: var(--heading-three);
+    line-height: 48px;
+  }
+
   @include sm {
     font-size: var(--heading-four);
     line-height: 48px;
@@ -95,6 +104,10 @@
     border-radius: 16px;
     padding-left: 20px;
     border: 0.5px solid var(--body-text);
+
+    @include md {
+      width: 350px;
+    }
 
     @include sm {
       width: 174px;
