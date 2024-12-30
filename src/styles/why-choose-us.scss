@@ -1,0 +1,133 @@
+@import "./responsive.scss";
+
+.why-choose-us-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 72px;
+  margin-right: 72px;
+
+  @include ms {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include md {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include sm {
+    margin-top: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+.why-choose-us-content-container {
+  gap: 120px;
+
+  @include ms {
+    gap: 0;
+  }
+
+  @include md {
+    gap: 0;
+  }
+
+  @include sm {
+    gap: 0;
+  }
+
+  .why-choose-us-title-container {
+    gap: 16px;
+
+    .why-choose-us-title {
+      font-size: var(--heading-three);
+      line-height: 56px;
+      font-weight: bold;
+    }
+
+    .why-choose-us-description {
+      font-size: var(--large);
+    color: var(--body-text);
+    line-height: 32px;
+    font-weight: normal;
+    }
+  }
+
+
+  .why-choose-us-checks {
+    gap: 32px;
+
+    .check-col {
+      @include ms {
+        flex-direction: column;
+      }
+
+      @include sm {
+        flex-direction: column;
+      }
+
+      // @include sm {
+      //   display: flex;
+      //   flex-direction: column;
+      // }
+    }
+
+    .tick-background {
+      background-color: var(--secondary-black);
+      color: var(--white-text);
+      width: 59px;
+      height: 46px;
+      margin-top: 6px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .why-choose-us-checks-title {
+      font-size: var(--heading-four);
+      font-weight: bold;
+      line-height: 48px;
+
+      @include ms {
+        font-size: var(--heading-five);
+      }
+
+      @include md {
+        font-size: var(--heading-five);
+      }
+
+      @include sm {
+        font-size: var(--large);
+      }
+    }
+
+    .why-choose-us-checks-description {
+      font-size: var(--large);
+      line-height: 32px;
+      font-weight: normal;
+      color: var(--body-text);
+    }
+  }
+
+
+  .why-choose-us-image {
+    width: 456px;
+    height: 720px;
+    object-fit: cover;
+
+    @include ms {
+      display: none;
+    }
+
+    @include md {
+      display: none;
+    }
+
+    @include sm {
+      display: none;
+    }
+  }
+}

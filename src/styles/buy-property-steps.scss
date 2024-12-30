@@ -12,8 +12,8 @@
   }
 
   @include md {
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   @include sm {
@@ -94,7 +94,7 @@
     line-height: 48px;
 
     @include sm {
-      font-size: var(--disabled-text);
+      font-size: var(--body-text);
       line-height: 32px;
     }
   }
