@@ -41,6 +41,7 @@
   .why-choose-us-title-container {
     gap: 16px;
 
+
     .why-choose-us-title {
       font-size: var(--heading-three);
       line-height: 56px;
@@ -67,11 +68,6 @@
       @include sm {
         flex-direction: column;
       }
-
-      // @include sm {
-      //   display: flex;
-      //   flex-direction: column;
-      // }
     }
 
     .tick-background {

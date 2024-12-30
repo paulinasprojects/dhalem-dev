@@ -118,6 +118,14 @@ input[type=number] {
   align-items: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .mb-8 {
   margin-bottom: 8px;
 }
@@ -130,10 +138,22 @@ input[type=number] {
   margin-top: 40px;
 }
 
+.mt-80 {
+  margin-top: 80px;
+}
+
 .gap-8 {
   gap: 8px;
 }
 
 .gap-16 {
   gap: 16px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
