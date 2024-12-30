@@ -7,7 +7,9 @@ const FeaturedListings = () => {
     <div className="featured-listings-container">
       <div className="featured-title-container">
         <span className="featured-listing-title">Featured Listings</span>
-        <span className="featured-listing-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br /> tempor incididunt ut labore et dolore magna aliqua.</span>
+        <span className="featured-listing-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br /> tempor incididunt ut labore et dolore magna aliqua.
+        </span>
       </div>
       <div className="featured-listings-items-container">
         {featuredListingsData.map((item) => (
@@ -29,8 +31,12 @@ const FeaturedListings = () => {
         ))}
       </div>
       <div className="see-more-container">
-        <span className="see-more-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br className="featured-br" /> eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-        <button className="seem-more-button">See more</button>
+        <span className="see-more-title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br /> eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </span>
+        <button className="seem-more-button">
+          See more
+        </button>
       </div>
     </div>
   )
