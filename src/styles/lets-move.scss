@@ -70,10 +70,10 @@
     line-height: 56px;
   }
 
-  @include ms {
-
+  @include sm {
+    font-size: var(--heading-four);
+    line-height: 48px;
   }
-
 
 }
 .lets-move-description {
@@ -97,6 +97,10 @@
     font-size: var(--large);
     line-height: 32px;
     font-weight: 600;
+
+    @include sm {
+      width: 100%;
+    }
   }
 
   .lets-move-button:hover {
