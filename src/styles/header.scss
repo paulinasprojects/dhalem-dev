@@ -36,6 +36,12 @@
     cursor: pointer;
   }
 
+  .quota-button:hover {
+    background-color: var(--secondary-white);
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+  }
+
   .mobile-nav {
     @include xl {
       display: none;

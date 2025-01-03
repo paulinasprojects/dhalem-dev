@@ -1,0 +1,135 @@
+@import "./responsive.scss";
+
+.lets-move-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 72px;
+  margin-right: 72px;
+
+  @include md {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include ms {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include sm {
+    margin-top: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+.lets-move-content-container {
+  gap: 80px;
+
+  @include md {
+    gap: 0;
+  }
+
+  @include ms {
+    gap: 0;
+  }
+
+  @include sm {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .move-image {
+    width: 448px;
+    height: 504px;
+    border-radius: 16px;
+    object-fit: cover;
+
+    @include ms {
+      display: none;
+    }
+    @include md {
+      display: none;
+    }
+    @include sm {
+      display: flex;
+      width: 328px;
+      height: 240px;
+    }
+  }
+}
+
+.lets-move-title {
+  font-size: var(--heading-two);
+  line-height: 72px;
+  font-weight: bold;
+
+  @include md {
+    font-size: var(--heading-three);
+    line-height: 56px;
+  }
+
+  @include ms {
+
+  }
+
+
+}
+.lets-move-description {
+  font-size: var(--large);
+  color: var(--body-text);
+  line-height: 32px;
+}
+
+.lets-move-button-container {
+  margin-top: 16px;
+
+  .lets-move-button {
+    width: 194px;
+    height: 48px;
+    color: var(--white-text);
+    background-color: var(--primary-blue);
+    border-radius: 80px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: var(--large);
+    line-height: 32px;
+    font-weight: 600;
+  }
+
+  .lets-move-button:hover {
+    background-color: var(--secondary-white);
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+  }
+}
+
+.lets-move-gallery-container {
+  display: flex;
+  gap: 16px;
+
+  @include sm {
+    display: none;
+  }
+
+  .lets-move-gallery-image {
+    margin-top: 24px;
+    width: 192px;
+    height: 184px;
+    object-fit: cover;
+    border-radius: 16px;
+
+    @include md {
+      width: 290px;
+      height: 184px;
+    }
+
+    @include ms {
+      width: 210px;
+      height: 184px;
+    }
+
+  }
+}
