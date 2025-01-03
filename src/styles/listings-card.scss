@@ -1,0 +1,136 @@
+@import "./responsive.scss";
+
+.listings-card-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 72px;
+  margin-right: 72px;
+
+  @include md {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include ms {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include sm {
+    margin-top: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+.listings-card-content-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+
+
+  @include md {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include ms {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+
+  @include sm {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .listings-image {
+    width: 368px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 16px;
+
+    @include ms {
+      width: 324px;
+    }
+  }
+
+  .listings-absolute-container {
+    top: 16px;
+    left: 16px;
+  }
+
+  .listings-card-price {
+    background-color: var(--secondary-black);
+    color: var(--white-text);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 80px;
+    font-size: var(--large);
+    line-height: 32px;
+    font-weight: bold;
+  }
+
+  .listings-item-title-container {
+    margin-top: 16px;
+
+    .listings-item-title {
+      font-size: var(--heading-four);
+      line-height: 48px;
+      font-weight: bold;
+
+      @include sm {
+        font-size: var(--large);
+        line-height: 32px;
+      }
+    }
+  }
+
+  .listings-item-location {
+    margin-top: 8px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    .listings-location-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .listings-item-location-title {
+      font-size: var(--large);
+      color: var(--body-text);
+      font-weight: normal;
+      line-height: 32px;
+    }
+  }
+
+  .items-bg-container {
+    background-color: var(--secondary-light-gray);
+    width: fit-content;
+    border-radius: 16px;
+
+    .listings-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .listings-span {
+      font-size: var(--medium);
+      line-height: 24px;
+      color: var(--body-text);
+
+      @include ms {
+        font-size: var(--small);
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .items-container {
+    margin-top: 16px;
+    padding: 12px;
+  }
+  
+}
