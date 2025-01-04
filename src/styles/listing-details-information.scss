@@ -1,0 +1,131 @@
+@import "./responsive.scss";
+
+
+.listing-details-information-container {
+  display: flex;
+  gap: 80px;
+
+  @include ms {
+    gap: 40px;
+  }
+
+  @include sm {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .listing-details-left-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .listing-details-left-paragraph {
+      font-size: var(--large);
+      font-weight: normal;
+      color: var(--body-text);
+    }
+
+    .listing-details-info-location {
+      font-size: var(--large);
+      font-weight: normal;
+      color: var(--body-text);
+
+      .listing-details-info-icon {
+        width: 24px;
+        height: 24px;
+        color: var(--secondary-black);
+      }
+    }
+
+    .listing-details-bg-container {
+      background-color: var(--secondary-light-gray);
+      width: fit-content;
+      border-radius: 16px;
+
+      .listing-details-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .listing-dietails-items-container {
+      padding: 12px;
+    }
+
+    .listing-details-info {
+      font-size: var(--medium);
+      line-height: 24px;
+      color: var(--body-text);
+
+      @include ms {
+        font-size: var(--small);
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .listing-details-right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .listing-details-right-paragraph {
+      font-size: var(--large);
+      font-weight: normal;
+      color: var(--body-text);
+    }
+
+    .listing-details-right-price-container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      @include ms {
+        align-items: start;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      @include sm {
+        align-items: start;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .listing-details-right-price {
+        font-size: var(--heading-three);
+        font-weight: bold;
+        line-height: 56px;
+
+      }
+
+      .listing-details-right-button {
+        background-color: var(--primary-blue);
+        color: var(--white-text);
+        border: none;
+        outline: none;
+        width: 229px;
+        height: 48px;
+        cursor: pointer;
+        border-radius: 80px;
+        font-size: var(--large);
+        line-height: 32px;
+        font-weight: 600;
+
+        @include ms {
+          width: 312px;
+        }
+
+        @include sm {
+          width: 100%;
+        }
+      }
+
+      .listing-details-right-button:hover {
+        background-color: var(--secondary-white);
+        color: var(--primary-blue);
+        border: 1px solid var(--primary-blue);
+      }
+    }
+  }
+}

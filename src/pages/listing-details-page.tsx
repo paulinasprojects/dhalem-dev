@@ -1,6 +1,7 @@
 import "@/styles/listing-details.scss";
 import { propertyImages } from "@/lib/data";
 import ImageSlider from "@/components/image-slider";
+import ListingDetailsInformation from "@/components/listing-details-information";
 
 const ListingDetailsPage = () => {
   return (
@@ -11,6 +12,9 @@ const ListingDetailsPage = () => {
       </div>
       <div>
         <ImageSlider images={propertyImages}/>
+      </div>
+      <div className="listing-details-information">
+        <ListingDetailsInformation/>
       </div>
     </div>
   )
