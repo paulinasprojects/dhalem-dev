@@ -1,8 +1,11 @@
 import { featuredListingsData } from "@/lib/data";
 import { MdLocationOn } from "react-icons/md";
 import "@/styles/featured-listings.scss";
+import { useNavigate } from "react-router-dom";
 
 const FeaturedListings = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="featured-listings-container">
       <div className="featured-title-container">
@@ -13,7 +16,7 @@ const FeaturedListings = () => {
       </div>
       <div className="featured-listings-items-container">
         {featuredListingsData.map((item) => (
-          <div>
+          <div onClick={() => navigate("/listings/1")}>
             <div className="relative | relative-container">
               <img src={item.image} alt="" className="featured-listing-image" />
               <div className="absolute | absolute-container">

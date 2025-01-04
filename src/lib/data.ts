@@ -156,3 +156,10 @@ export const listingsPageData = [
     badrooms: 5,
   },
 ];
+
+export const propertyImages = [
+  "https://res.cloudinary.com/dymlzmyuo/image/upload/v1735992412/premium_photo-1661963657305-f52dcaeef418_mwvoma.png",
+  "https://res.cloudinary.com/dymlzmyuo/image/upload/v1735993401/dada_design-nj1F4T027KY-unsplash_ova9t7.jpg",
+  "https://res.cloudinary.com/dymlzmyuo/image/upload/v1735993281/kirill-9uH-hM0VwPg-unsplash_xh5dq9.jpg",
+  "https://res.cloudinary.com/dymlzmyuo/image/upload/v1735993376/dada_design-cZ5nAiXKCq0-unsplash_box8lc.jpg",
+];

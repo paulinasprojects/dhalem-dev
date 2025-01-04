@@ -1,4 +1,5 @@
 import "@/styles/listings-card.scss";
+import { useNavigate } from "react-router-dom";
 import { listingsPageData } from "@/lib/data";
 import { MdLocationOn} from "react-icons/md";
 import { RiLayoutGridLine } from "react-icons/ri";
@@ -6,11 +7,13 @@ import { FaBed } from "react-icons/fa6";
 import { MdBathtub } from "react-icons/md";
 
 const ListingsCard = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="listings-card-container">
       <div className="listings-card-content-container">
         {listingsPageData.map((data) => (
-          <div>
+          <div onClick={() => navigate("/listings/1")}>
             <div className="relative">
               <img src={data.image} alt="" className="listings-image" />
               <div className="absolute | listings-absolute-container">
