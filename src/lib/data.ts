@@ -43,7 +43,7 @@ export const listingsPageData = [
     location: "Pluto Street, Indonesia",
     sqft: 800,
     bedrooms: 1,
-    badrooms: 2,
+    bathrooms: 2,
   },
   {
     id: 2,
@@ -53,7 +53,7 @@ export const listingsPageData = [
     location: "Jupiter Street, Indonesia",
     sqft: 1800,
     bedrooms: 2,
-    badrooms: 3,
+    bathrooms: 3,
   },
   {
     id: 3,
@@ -63,7 +63,7 @@ export const listingsPageData = [
     location: "Michigan Street, USA",
     sqft: 2800,
     bedrooms: 3,
-    badrooms: 4,
+    bathrooms: 4,
   },
   {
     id: 4,
@@ -73,7 +73,7 @@ export const listingsPageData = [
     location: "Halsted Street, USA",
     sqft: 3800,
     bedrooms: 4,
-    badrooms: 5,
+    bathrooms: 5,
   },
   {
     id: 5,
@@ -83,7 +83,7 @@ export const listingsPageData = [
     location: "Pluto Street, Indonesia",
     sqft: 800,
     bedrooms: 1,
-    badrooms: 2,
+    bathrooms: 2,
   },
   {
     id: 6,
@@ -93,7 +93,7 @@ export const listingsPageData = [
     location: "Jupiter Street, Indonesia",
     sqft: 1800,
     bedrooms: 2,
-    badrooms: 3,
+    bathrooms: 3,
   },
   {
     id: 7,
@@ -103,7 +103,7 @@ export const listingsPageData = [
     location: "Michigan Street, USA",
     sqft: 2800,
     bedrooms: 3,
-    badrooms: 4,
+    bathrooms: 4,
   },
   {
     id: 8,
@@ -113,7 +113,7 @@ export const listingsPageData = [
     location: "Halsted Street, USA",
     sqft: 3800,
     bedrooms: 4,
-    badrooms: 5,
+    bathrooms: 5,
   },
   {
     id: 9,
@@ -123,7 +123,7 @@ export const listingsPageData = [
     location: "Pluto Street, Indonesia",
     sqft: 800,
     bedrooms: 1,
-    badrooms: 2,
+    bathrooms: 2,
   },
   {
     id: 10,
@@ -133,7 +133,7 @@ export const listingsPageData = [
     location: "Jupiter Street, Indonesia",
     sqft: 1800,
     bedrooms: 2,
-    badrooms: 3,
+    bathrooms: 3,
   },
   {
     id: 11,
@@ -143,7 +143,7 @@ export const listingsPageData = [
     location: "Michigan Street, USA",
     sqft: 2800,
     bedrooms: 3,
-    badrooms: 4,
+    bathrooms: 4,
   },
   {
     id: 12,
@@ -153,7 +153,7 @@ export const listingsPageData = [
     location: "Halsted Street, USA",
     sqft: 3800,
     bedrooms: 4,
-    badrooms: 5,
+    bathrooms: 5,
   },
 ];
 
@@ -188,4 +188,29 @@ export const propertyAmenities = [
   "Studio",
   "Soccer Field",
   "Gym",
+];
+
+export const otherProperties = [
+  {
+    id: 1,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736159615/premium_photo-1682377521625-c656fc1ff3e1_mnrkqu.png",
+    price: "8,800",
+    title: "Tingah Elegant House",
+    location: "Pluto Street, Indonesia",
+    sqft: 3800,
+    bedrooms: 4,
+    bathrooms: 5,
+  },
+  {
+    id: 2,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736159639/premium_photo-1686782502813-51579b55f6d8_aboybx.png",
+    price: "2,800",
+    title: "Nsor Standard House",
+    location: "Halsted Street, USA",
+    sqft: 800,
+    bedrooms: 1,
+    bathrooms: 2,
+  },
 ];

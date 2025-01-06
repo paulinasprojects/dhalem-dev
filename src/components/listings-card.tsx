@@ -45,7 +45,7 @@ const ListingsCard = () => {
                 <div className="flex items-center gap-8">
                   <MdBathtub className="listings-icon"/>
                   <span className="listings-span">
-                    {data.badrooms} {" "}
+                    {data.bathrooms} {" "}
                     Bathroom
                   </span>
                 </div>

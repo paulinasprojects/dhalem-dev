@@ -17,3 +17,117 @@
   line-height: 32px;
   color: var(--body-text);
 }
+
+.other-property-container {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include md {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  @include ms {
+    gap: 16px;
+  }
+
+  @include sm {
+    flex-direction: column;
+  }
+}
+
+.other-property-image {
+  width: 368px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 16px;
+  cursor: pointer;
+
+  @include ms {
+    width: 324px;
+  }
+}
+
+.other-property-absolute-container {
+  top: 16px;
+  left: 16px;
+
+  .other-property-price {
+    background-color: var(--secondary-black);
+    color: var(--white-text);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 80px;
+    font-size: var(--large);
+    line-height: 32px;
+    font-weight: bold;
+  }
+}
+
+.other-property-card-title-container {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+
+  .other-property-card-title {
+    font-size: var(--large);
+    font-weight: bold;
+    line-height: 32px;
+
+    @include ms {
+      font-size: var(--heading-five);
+      line-height: 40px;
+    }
+  }
+
+  .other-property-location-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .other-property-location-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .other-property-location {
+      font-size: var(--large);
+      font-weight: normal;
+      color: var(--body-text);
+      line-height: 32px;
+    }
+  }
+}
+
+.other-property-data-container {
+  background-color: var(--secondary-light-gray);
+  width: fit-content;
+  border-radius: 16px;
+
+  .other-property-data-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .other-property-span {
+    font-size: var(--small);
+    line-height: 24px;
+    color: var(--body-text);
+
+    @include ms {
+      white-space: nowrap;
+    }
+  }
+
+  .other-property-data {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    margin-top: 16px;
+    padding: 12px;
+  }
+}

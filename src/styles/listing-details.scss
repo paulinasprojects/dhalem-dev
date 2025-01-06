@@ -56,6 +56,10 @@
     display: flex;
     gap: 40px;
 
+    @include md {
+      flex-direction: column;
+    }
+
 
     @include ms {
       flex-direction: column;
