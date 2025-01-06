@@ -1,0 +1,48 @@
+@import "./responsive.scss";
+
+.featured-services-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 72px;
+  margin-right: 72px;
+
+  @include md {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include ms {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include sm {
+    margin-top: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .featured-services-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include sm {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .featured-services-title {
+      font-size: var(--heading-three);
+      font-weight: bold;
+      line-height: 56px;
+    }
+
+    .feautured-services-description {
+      font-size: var(--large);
+      font-weight: normal;
+      color: var(--body-text);
+      line-height: 32px;
+    }
+  }
+}
