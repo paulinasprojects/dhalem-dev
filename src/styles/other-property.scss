@@ -1,0 +1,19 @@
+@import "./responsive.scss";
+
+.other-property-title {
+  font-size: var(--heading-three);
+  font-weight: bold;
+  line-height: 56px;
+
+  @include sm {
+    font-size: var(--heading-five);
+    line-height: 40px;
+  }
+}
+
+.other-property-description {
+  font-size: var(--large);
+  font-weight: normal;
+  line-height: 32px;
+  color: var(--body-text);
+}

@@ -15,7 +15,7 @@ const ListingDetailsInformation = () => {
           Mars Street, Indonesia
         </span>
         <div className="listing-details-bg-container">
-          <div className="flex items-center gap-22 | listing-dietails-items-container">
+          <div className="listing-details-items-container">
             <div className="flex items-center gap-8">
               <RiLayoutGridLine className="listing-details-icon"/>
               <span className="listing-details-info">
@@ -31,7 +31,7 @@ const ListingDetailsInformation = () => {
             <div className="flex items-center gap-8">
               <MdBathtub className="listing-details-icon"/>
               <span className="listing-details-info">
-                1 Bathroom
+                3 Bathrooms
               </span>
             </div>
           </div>

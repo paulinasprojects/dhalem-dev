@@ -48,8 +48,20 @@
       }
     }
 
-    .listing-dietails-items-container {
+    .listing-details-items-container {
       padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 96px;
+
+      @include md {
+        gap: 22px;
+      }
+
+      @include sm {
+        gap: 22px;
+      }
     }
 
     .listing-details-info {

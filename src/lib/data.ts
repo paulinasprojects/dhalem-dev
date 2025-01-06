@@ -163,3 +163,29 @@ export const propertyImages = [
   "https://res.cloudinary.com/dymlzmyuo/image/upload/v1735993281/kirill-9uH-hM0VwPg-unsplash_xh5dq9.jpg",
   "https://res.cloudinary.com/dymlzmyuo/image/upload/v1735993376/dada_design-cZ5nAiXKCq0-unsplash_box8lc.jpg",
 ];
+
+export const propertyGallery = [
+  "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736153860/naomi-hebert-MP0bgaS_d1c-unsplash_nfcqyk.jpg",
+  "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736153853/dada_design-9KGB4HspwsM-unsplash_fuwtfy.jpg",
+  "https://res.cloudinary.com/dymlzmyuo/image/upload/v1735993376/dada_design-cZ5nAiXKCq0-unsplash_box8lc.jpg",
+  "https://res.cloudinary.com/dymlzmyuo/image/upload/v1735993401/dada_design-nj1F4T027KY-unsplash_ova9t7.jpg",
+];
+
+export const propertyAmenities = [
+  "Backyard",
+  "Garage",
+  "Outdoor Kitchen",
+  "Storage Units",
+  "Pet Friendly",
+  "Laundry",
+  "Family Room",
+  "Wi-fi",
+  "Balcony",
+  "Fitness Center",
+  "Barbeque",
+  "Sauna",
+  "Swimming Pool",
+  "Studio",
+  "Soccer Field",
+  "Gym",
+];

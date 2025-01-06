@@ -1,0 +1,37 @@
+@import "./responsive.scss";
+
+.property-location-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.property-location-title {
+  font-size: var(--heading-three);
+  font-weight: bold;
+  line-height: 56px;
+
+  @include sm {
+    font-size: var(--heading-five);
+    line-height: 40px;
+  }
+}
+
+.propery-location-description {
+  font-size: var(--large);
+  font-weight: normal;
+  line-height: 32px;
+  color: var(--body-text);
+}
+
+.location-image {
+  width: 688px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 16px;
+
+  @include sm {
+    width: 390px;
+    height: 240px;
+  }
+}

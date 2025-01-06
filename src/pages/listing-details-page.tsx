@@ -2,6 +2,8 @@ import "@/styles/listing-details.scss";
 import { propertyImages } from "@/lib/data";
 import ImageSlider from "@/components/image-slider";
 import ListingDetailsInformation from "@/components/listing-details-information";
+import PropertyDetails from "@/components/property-details";
+import OtherProperty from "@/components/other-property";
 
 const ListingDetailsPage = () => {
   return (
@@ -15,6 +17,16 @@ const ListingDetailsPage = () => {
       </div>
       <div className="listing-details-information">
         <ListingDetailsInformation/>
+      </div>
+      <div className="property-details">
+        {/* left */}
+      <div className="">
+        <PropertyDetails/>
+      </div>
+      {/* Right */}
+        <div>
+          <OtherProperty/>
+        </div>
       </div>
     </div>
   )
