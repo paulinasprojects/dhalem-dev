@@ -27,6 +27,15 @@
     font-weight: bold;
     line-height: 72px;
 
+    @include ms {
+      font-size: var(--heading-three);
+      line-height: 56px;
+    }
+
+    @include sm {
+      font-size: var(--heading-four);
+      line-height: 48px;
+    }
   }
 
   .page-heading-description {

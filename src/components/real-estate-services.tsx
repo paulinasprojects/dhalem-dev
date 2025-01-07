@@ -23,7 +23,7 @@ const RealEstateServices = () => {
           {realEstateServices.map((services, index) => (
             <div key={index} className="real-estate-services-item">
               <FaCheck className="real-estate-services-item-icon"/>
-              <span>{services}</span>
+              <span className="real-esatate-service-item">{services}</span>
             </div>
           ))}
         </div>

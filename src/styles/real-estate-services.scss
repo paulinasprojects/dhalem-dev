@@ -71,6 +71,14 @@
     font-size: var(--heading-three);
     font-weight: bold;
     line-height: 56px;
+
+    @include ms {
+      font-size: var(--heading-four);
+    }
+
+    @include sm {
+      font-size: var(--heading-five);
+    }
   }
 
   .real-estate-services-description {
@@ -101,6 +109,13 @@
     background-color: var(--secondary-black);
     color: var(--secondary-white);
     border-radius: 80px;
+  }
+
+  .real-esatate-service-item {
+    font-size: var(--large);
+    font-weight: normal;
+    color: var(--body-text);
+    line-height: 32px;
   }
 }
 
