@@ -79,3 +79,28 @@
     color: var(--body-text);
   }
 }
+
+.featured-card-services {
+  margin-top: 80px;
+
+  .featured-card-services-image {
+    width: 1300px;
+    height: 457px;
+    border-radius: 16px;
+    object-fit: cover;
+
+    @include md {
+      width: 910px;
+      height: 320px;
+    }
+    @include ms {
+      width: 664px;
+      height: 320px;
+    }
+
+    @include sm {
+      width: 390px;
+      height: 240px;
+    }
+  }
+}

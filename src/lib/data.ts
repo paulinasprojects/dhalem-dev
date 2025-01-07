@@ -190,6 +190,21 @@ export const propertyAmenities = [
   "Gym",
 ];
 
+export const realEstateServices = [
+  "Property Consultans",
+  "Home Inspections",
+  "Building Contractors",
+  "Interior Designers",
+  "Interior Decorators",
+  "Architects",
+  "Builders",
+  "Agents",
+  "Exterior Design",
+  "Property Design",
+  "Rent",
+  "Investor",
+];
+
 export const otherProperties = [
   {
     id: 1,

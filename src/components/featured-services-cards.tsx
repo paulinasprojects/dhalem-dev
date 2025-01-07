@@ -1,5 +1,6 @@
 import "@/styles/featured-services-cards.scss";
 import { FaCheck } from "react-icons/fa6";
+import services from '/services.png';
 
 const FeaturedServicesCards = () => {
   return (
@@ -33,6 +34,9 @@ const FeaturedServicesCards = () => {
           <span className="featured-card-title">Commercial <br /> Building</span>
           <span className="featured-card-description">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
         </div>
+      </div>
+      <div className="featured-card-services">
+        <img src={services} alt="" className="featured-card-services-image" />
       </div>
     </div>
   )
