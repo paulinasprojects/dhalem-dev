@@ -1,5 +1,6 @@
 import PageHeading from "@/components/common/page-heading";
 import FeaturedServices from "@/components/featured-services";
+import OurSponsors from "@/components/our-sponsors";
 import RealEstateServices from "@/components/real-estate-services";
 import "@/styles/our-services.scss";
 
@@ -12,6 +13,7 @@ const OurServices = () => {
       />
       <FeaturedServices/>
       <RealEstateServices/>
+      <OurSponsors/>
     </div>
   )
 }

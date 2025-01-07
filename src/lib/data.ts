@@ -205,6 +205,13 @@ export const realEstateServices = [
   "Investor",
 ];
 
+export const ourSponsorsLogos = [
+  "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736244796/Frame_x01fuk.png",
+  "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736244878/Frame_1_jsl17w.png",
+  "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736244912/Frame_2_z2z3cj.png",
+  "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736244939/Frame_3_rwgxcu.png",
+];
+
 export const otherProperties = [
   {
     id: 1,
