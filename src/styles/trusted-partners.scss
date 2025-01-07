@@ -1,0 +1,81 @@
+@import "./responsive.scss";
+
+.trusted-partners-main-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  @include sm {
+    margin-top: 32px;
+  }
+
+  .trusted-partners-title-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 80px;
+
+    @include ms {
+      gap: 20px;
+    }
+
+    @include sm {
+      display: flex;
+      gap: 0px;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .trusted-partners-title {
+      font-size: var(--heading-three);
+      font-weight: bold;
+      line-height: 56px;
+  
+      @include ms {
+        font-size: var(--heading-four);
+        line-height: 48px;
+      }
+  
+      @include sm {
+        font-size: var(--heading-five);
+        line-height: 40px;
+      }
+    }
+
+    .trusted-partners-description {
+      font-size: var(--large);
+      font-weight: normal;
+      color: var(--body-text);
+      line-height: 32px;
+    }
+
+    .trusted-partners-description br {
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+  .trusted-partners-logos-container {
+    margin-top: 84px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    @include md {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 46px;
+    }
+
+    @include ms {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 43px;
+    }
+
+    @include sm {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 46px;
+    }
+
+    .trusted-partners-logo-image {
+      object-fit: cover;
+    }
+  }
+}

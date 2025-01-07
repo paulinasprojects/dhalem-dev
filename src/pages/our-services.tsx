@@ -1,7 +1,7 @@
 import PageHeading from "@/components/common/page-heading";
 import FeaturedServices from "@/components/featured-services";
 import LetsMove from "@/components/lets-move";
-import OurSponsors from "@/components/our-sponsors";
+import OurSponsors  from "@/components/our-sponsors";
 import RealEstateServices from "@/components/real-estate-services";
 import "@/styles/our-services.scss";
 
@@ -14,7 +14,7 @@ const OurServices = () => {
       />
       <FeaturedServices/>
       <RealEstateServices/>
-      <OurSponsors/>
+      <OurSponsors />
       <div className="our-services-lets-move-container">
       <LetsMove/>
       </div>

@@ -1,8 +1,10 @@
 import "@/styles/experience.scss";
 import OurVisionMision from "./our-vision-mision";
+import TrustedPartners from "./trusted-partners";
 
 const Experience = () => {
   return (
+    <> 
     <div className="experience-main-container">
       <div className="experience-title-container">
         <p className="experience-title">
@@ -14,7 +16,9 @@ const Experience = () => {
       </div>
         <img src="https://res.cloudinary.com/dymlzmyuo/image/upload/v1736250103/Image_kagtrj.png" className="experience-image" alt="" />
         <OurVisionMision/>
+        <TrustedPartners/>
     </div>
+    </>
   )
 }
 
