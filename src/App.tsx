@@ -4,6 +4,7 @@ import HomePage from '@/pages/home-page';
 import ListingsPage from '@/pages/listings-page';
 import ListingDetailsPage from '@/pages/listing-details-page';
 import OurServices from './pages/our-services';
+import AboutUs from './pages/about-us-page';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
     <Route path='/listings' element={<MainLayout><ListingsPage/></MainLayout>}/>
     <Route path='/listings/1' element={<MainLayout><ListingDetailsPage/></MainLayout>}/>
     <Route path='/services' element={<MainLayout><OurServices/></MainLayout>}/>
+    <Route path='/about-us' element={<MainLayout><AboutUs/></MainLayout>}/>
     <Route path='*' element={<Navigate to="/"/>}/>
    </Routes>
   );
