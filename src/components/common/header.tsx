@@ -24,6 +24,7 @@ const Header = () => {
             <Link to="/listings">Listings</Link>
             <Link to="/services">Services</Link>
             <Link to="/about-us">About</Link>
+            <Link to="/our-team">Our Team</Link>
             <Link to="/contact-us">Contact Us</Link>
             <button className='quota-button'>Get a Quota</button>
          </div>
