@@ -264,6 +264,65 @@ export const ourAgentsList = [
     image:
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736325920/agent-four_slu6li.png",
     name: "Earl Moss",
-    workPosition: "Sales Manger",
+    workPosition: "Sales Manager",
+  },
+];
+
+export const ourTeamList = [
+  {
+    id: 1,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736325817/agent-1_coupqj.png",
+    name: "Matthew Duke",
+    workPosition: "CEO",
+  },
+  {
+    id: 2,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736325845/agent-2_lpemiz.png",
+    name: "Rod Elder",
+    workPosition: "Project Manager",
+  },
+  {
+    id: 3,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736325912/agent-3_ln5viy.png",
+    name: "Ira Richmond",
+    workPosition: "Marketing Manager",
+  },
+  {
+    id: 4,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736325920/agent-four_slu6li.png",
+    name: "Earl Moss",
+    workPosition: "Sales Manager",
+  },
+  {
+    id: 5,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736333547/agent-5_muv7s1.png",
+    name: "Vickie Rogers",
+    workPosition: "Staff",
+  },
+  {
+    id: 6,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736333547/agent-6_hrmkek.png",
+    name: "Janice Richards",
+    workPosition: "Staff",
+  },
+  {
+    id: 7,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736333548/agent-7_svtbkz.png",
+    name: "Bethany Shaffer",
+    workPosition: "Staff",
+  },
+  {
+    id: 8,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736333549/agent-8_bqey0f.png",
+    name: "Erika Boyer",
+    workPosition: "Staff",
   },
 ];

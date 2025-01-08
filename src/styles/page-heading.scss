@@ -44,5 +44,8 @@
     line-height: 32px;
     font-weight: normal;
 
+    @include sm {
+      text-align: center;
+    }
   }
 }

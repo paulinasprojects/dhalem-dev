@@ -123,6 +123,16 @@
       font-size: var(--heading-four);
       font-weight: bold;
       line-height: 48px;
+
+      @include ms {
+        font-size: var(--heading-five);
+        line-height: 40px;
+      }
+
+      @include sm {
+        font-size: var(--large);
+        line-height: 32px;  
+      }
     }
 
     .agent-work-position {

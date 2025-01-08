@@ -5,6 +5,7 @@ import ListingsPage from '@/pages/listings-page';
 import ListingDetailsPage from '@/pages/listing-details-page';
 import OurServices from './pages/our-services';
 import AboutUs from './pages/about-us-page';
+import OurTeamPage from './pages/our-team-page';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
     <Route path='/listings/1' element={<MainLayout><ListingDetailsPage/></MainLayout>}/>
     <Route path='/services' element={<MainLayout><OurServices/></MainLayout>}/>
     <Route path='/about-us' element={<MainLayout><AboutUs/></MainLayout>}/>
+    <Route path='/our-team' element={<MainLayout><OurTeamPage/></MainLayout>}/>
     <Route path='*' element={<Navigate to="/"/>}/>
    </Routes>
   );

@@ -1,0 +1,108 @@
+@import "./responsive.scss";
+
+.our-team-gallery-main-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 72px;
+  margin-right: 72px;
+
+  @include md {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include ms {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include sm {
+    margin-top: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .our-team-gallery-content-container {
+    display: grid;
+    row-gap: 40px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    @include md {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      row-gap: 32px;
+    }
+
+    @include ms {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      row-gap: 32px;
+    }
+
+    @include sm {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      row-gap: 32px;
+    }
+
+    .our-team-gallery-content {
+      margin-top: 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;      
+
+      @include md {
+        margin-top: 0px;
+        gap: 8px;
+      }
+
+      @include ms {
+        margin-top: 0px;
+        gap: 8px;
+      }
+
+      @include sm {
+        margin-top: 0px;
+        gap: 8px;
+      }
+
+      .our-team-gallery-image {
+        width: 272px;
+        height: 240px;
+        object-fit: cover;
+        border-radius: 16px;
+
+        @include ms {
+          width: 324px;
+        }
+
+        @include sm {
+          width: 390px;
+        }
+      }
+
+      .our-team-gallery-name {
+        font-size: var(--heading-four);
+      font-weight: bold;
+      line-height: 48px;
+
+      @include ms {
+        font-size: var(--heading-five);
+        line-height: 40px;
+      }
+
+      @include sm {
+       font-size: var(--large);
+       line-height: 32px;  
+      }
+
+      }
+
+      .our-team-gallery-work-position {
+        font-size: var(--large);
+        font-weight: normal;
+        line-height: 32px;
+        color: var(--body-text);
+      }
+
+    }
+
+  }
+}
