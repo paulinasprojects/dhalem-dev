@@ -1,0 +1,167 @@
+@import "./responsive.scss";
+
+.our-agents-main-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 72px;
+  margin-right: 72px;
+
+  @include md {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include ms {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include sm {
+    margin-top: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .our-agents-title-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 80px;
+
+    @include ms {
+      gap: 20px;
+    }
+
+    @include sm {
+      display: flex;
+      gap: 0px;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .our-agents-title {
+      font-size: var(--heading-three);
+      font-weight: bold;
+      line-height: 56px;
+  
+      @include ms {
+        font-size: var(--heading-four);
+        line-height: 48px;
+      }
+  
+      @include sm {
+        font-size: var(--heading-five);
+        line-height: 40px;
+      }
+    }
+
+    .our-agents-description {
+      font-size: var(--large);
+      font-weight: normal;
+      color: var(--body-text);
+      line-height: 32px;
+    }
+
+    .our-agents-description br {
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+  .agents-list-container {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+
+    @include md {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    @include ms {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+    @include sm {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 24px;
+    }
+  }
+  .agent-list-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include md {
+      gap: 8px;
+    }
+
+    @include ms {
+      gap: 8px;
+    }
+
+    @include sm {
+      gap: 8px;
+    }
+    
+    .agent-image {
+      width: 272px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 16px;
+
+      @include ms {
+        width: 324px;
+      }
+      @include sm {
+        width: 390px;
+      }
+    }
+    
+    .agent-name {
+      font-size: var(--heading-four);
+      font-weight: bold;
+      line-height: 48px;
+    }
+
+    .agent-work-position {
+      font-size: var(--large);
+      font-weight: normal;
+      line-height: 32px;
+      color: var(--body-text);
+    }
+  }
+
+  .see-more-container {
+    display: flex;
+    gap: 16px;
+
+    .see-more-title {
+      font-size: var(--large);
+      line-height: 32px;
+      font-weight: normal;
+      color: var(--body-text);
+    }
+
+    .see-more-button {
+      width: 149px;
+      height: 48px;
+      border-radius: 80px;
+      background-color: transparent;
+      border: 0.5px solid var(--secondary-black);
+      font-size: var(--large);
+      line-height: 32px;
+      font-weight: 500;
+
+      @include sm {
+        width: 100%;
+      }
+    }
+
+    .see-more-button:hover {
+      background-color: var(--secondary-black);
+      color: var(--white-text);
+    }
+  }
+}

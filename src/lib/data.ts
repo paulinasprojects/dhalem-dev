@@ -236,3 +236,34 @@ export const otherProperties = [
     bathrooms: 2,
   },
 ];
+
+export const ourAgentsList = [
+  {
+    id: 1,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736325817/agent-1_coupqj.png",
+    name: "Matthew Duke",
+    workPosition: "CEO",
+  },
+  {
+    id: 2,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736325845/agent-2_lpemiz.png",
+    name: "Rod Elder",
+    workPosition: "Project Manager",
+  },
+  {
+    id: 3,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736325912/agent-3_ln5viy.png",
+    name: "Ira Richmond",
+    workPosition: "Marketing Manager",
+  },
+  {
+    id: 4,
+    image:
+      "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736325920/agent-four_slu6li.png",
+    name: "Earl Moss",
+    workPosition: "Sales Manger",
+  },
+];
