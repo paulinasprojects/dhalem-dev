@@ -17,6 +17,12 @@
     line-height: 32px;
     color: var(--body-text);
   }
+
+  .get-in-touch-description br {
+    @include md {
+      display: none;
+    }
+  }
 }
 
 .get-in-touch-content-container {
@@ -61,4 +67,8 @@
   height: 240px;
   border-radius: 16px;
   object-fit: cover;
+
+  @include md {
+    width: 100%;
+  }
 }
