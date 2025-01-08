@@ -1,0 +1,62 @@
+@import "./responsive.scss";
+
+.contact-us-main-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 72px;
+  margin-right: 72px;
+
+  @include md {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include ms {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include sm {
+    margin-top: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+.contact-us-content-container {
+  display: flex;
+  justify-content: space-between;
+
+  @include md {
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .contact-us-get-in-touch {
+    @include md {
+      order: 2;
+    }
+
+    @include ms {
+      order: 2;
+    }
+
+    @include sm {
+      order: 2;
+    }
+  }
+
+  .contact-us-contact-form {
+    @include md {
+      order: 1;
+    }
+
+    @include ms {
+      order: 1;
+    }
+
+    @include sm {
+      order: 1;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import "./responsive.scss";
+
+.get-in-touch-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .get-in-touch-title {
+    font-size: var(--heading-three);
+    font-weight: bold;
+    line-height: 56px;
+  }
+
+  .get-in-touch-description {
+    font-size: var(--large);
+    font-weight: normal;
+    line-height: 32px;
+    color: var(--body-text);
+  }
+}
+
+.get-in-touch-content-container {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .get-in-touch-location-container {
+    display: flex;
+    gap: 8px;
+  }
+
+  .get-in-touch-phone-container {
+    display: flex;
+    gap: 8px;
+  }
+
+  .get-in-touch-mail-container {
+    display: flex;
+    gap: 8px;
+  }
+
+  .get-in-touch-content {
+    font-size: var(--large);
+    line-height: 32px;
+    color: var(--body-text);
+    font-weight: normal;
+  }
+
+  .get-in-touch-icon {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+.get-in-touch-map-image {
+  margin-top: 24px;
+  width: 368px;
+  height: 240px;
+  border-radius: 16px;
+  object-fit: cover;
+}

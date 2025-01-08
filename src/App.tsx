@@ -6,6 +6,7 @@ import ListingDetailsPage from '@/pages/listing-details-page';
 import OurServices from './pages/our-services';
 import AboutUs from './pages/about-us-page';
 import OurTeamPage from './pages/our-team-page';
+import ContactUsPage from './pages/contact-us-page';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
     <Route path='/services' element={<MainLayout><OurServices/></MainLayout>}/>
     <Route path='/about-us' element={<MainLayout><AboutUs/></MainLayout>}/>
     <Route path='/our-team' element={<MainLayout><OurTeamPage/></MainLayout>}/>
+    <Route path='/contact-us' element={<MainLayout><ContactUsPage/></MainLayout>}/>
     <Route path='*' element={<Navigate to="/"/>}/>
    </Routes>
   );
