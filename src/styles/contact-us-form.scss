@@ -56,3 +56,106 @@
     }
   }
 }
+
+.contact-us-form-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .contact-us-form-content-container {
+    display: flex;
+    gap: 16px;
+
+    @include sm {
+      flex-direction: column;
+    }
+  
+    .contact-us-form-container {
+      display: flex;
+      flex-direction: column;
+  
+      .contact-us-form-label {
+        font-size: var(--medium);
+        line-height: 24px;
+        font-weight: normal;
+        color: var(--body-text);
+        margin-left: 4px;
+      }
+  
+      .contact-us-form-input {
+        width: 336px;
+        height: 64px;
+        border-radius: 16px;
+        padding-left: 16px;
+        border: 1px solid var(--body-text);
+
+        @include sm {
+          width: 100%;
+        }
+      }
+  
+      .contact-us-form-input::placeholder {
+        color: var(--in-field-text);
+        font-size: var(--large);
+        line-height: 32px;
+      }
+    }
+  }
+
+  .contact-us-form-textarea-container {
+    display: flex;
+    flex-direction: column;
+
+    .contact-us-form-label {
+      font-size: var(--medium);
+      line-height: 24px;
+      font-weight: normal;
+      color: var(--body-text);
+      margin-left: 4px;
+    }
+
+    .contact-us-form-textarea {
+      resize: none;
+      width: 688px;
+      height: 120px;
+      border-radius: 16px;
+      padding-top: 8px;
+      padding-left: 16px;
+      border: 1px solid var(--body-text);
+
+      @include sm {
+        width: 395px;
+      }
+    }
+
+    .contact-us-form-textarea::placeholder {
+      color: var(--in-field-text);
+      font-size: var(--large);
+      line-height: 32px;
+    }
+  }
+
+  .contact-us-form-button {
+    width: 168px;
+    height: 48px;
+    border-radius: 80px;
+    border: none;
+    background-color: var(--primary-blue);
+    color: var(--white-text);
+    cursor: pointer;
+
+    @include ms {
+      width: 186px;
+    }
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  .contact-us-form-button:hover {
+    border: 1px solid var(--primary-blue);
+    color: var(--primary-blue);
+    background-color: var(--white-text);
+  }
+}
