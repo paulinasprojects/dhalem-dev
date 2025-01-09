@@ -143,6 +143,9 @@
     background-color: var(--primary-blue);
     color: var(--white-text);
     cursor: pointer;
+    font-size: var(--medium);
+    font-weight: 500;
+    line-height: 24px;
 
     @include ms {
       width: 186px;

@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import logo from '/logo.svg';
 import "@/styles/header.scss";
 import MobileNav from './mobile-nav';
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+   const navigate = useNavigate();
    const [open, setOpen] = useState<boolean>(false);
 
    const handleOpen = () => {
@@ -26,11 +28,11 @@ const Header = () => {
             <Link to="/about-us">About</Link>
             <Link to="/our-team">Our Team</Link>
             <Link to="/contact-us">Contact Us</Link>
-            <button className='quota-button'>Get a Quota</button>
+            <button className='quota-button' onClick={() => navigate("/contact-us")}>Get a Quota</button>
          </div>
          <div className='mobile-nav' onClick={handleOpen}>
             <MobileNav isOpen={open}/>
-            <button className='quota-button'>Get a Quota</button>
+            <button className='quota-button' onClick={() => navigate("/contact-us")}>Get a Quota</button>
          </div>
       </div>
     </div>

@@ -163,6 +163,7 @@
       font-size: var(--large);
       line-height: 32px;
       font-weight: 500;
+      cursor: pointer;
 
       @include sm {
         width: 100%;
