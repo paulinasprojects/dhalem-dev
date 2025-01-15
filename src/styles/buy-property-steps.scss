@@ -86,12 +86,14 @@
     font-size: var(--heading-five);
     line-height: 40px;
     font-weight: bold;
+    margin-bottom: 16px;
   }
 
   .step-title {
     font-size: var(--heading-four);
     font-weight: bold;
     line-height: 48px;
+    margin-bottom: 8px;
 
     @include sm {
       font-size: var(--body-text);

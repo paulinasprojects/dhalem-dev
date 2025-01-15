@@ -63,6 +63,7 @@
 
 
   .why-choose-us-checks {
+    margin-top: 40px;
     gap: 32px;
 
     .check-col {
@@ -78,7 +79,7 @@
     .tick-background {
       background-color: var(--secondary-black);
       color: var(--white-text);
-      width: 59px;
+      width: 80px;
       height: 59px;
       margin-top: 6px;
       border-radius: 50%;

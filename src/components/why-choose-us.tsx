@@ -12,7 +12,7 @@ const WhyChooseUs = () => {
             <h3 className="why-choose-us-title">Why Choose Us for Your House Needs?</h3>
             <p className="why-choose-us-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
-          <div className="mt-40 flex-col | why-choose-us-checks">
+          <div className="flex-col | why-choose-us-checks">
             <div className="flex gap-16 | check-col">
               <div className="tick-background">
                 <FaCheck style={{width: "17px", height: "24px"}}/>

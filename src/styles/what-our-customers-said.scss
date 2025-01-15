@@ -66,6 +66,7 @@
 }
 
 .customer-reviews-container {
+  margin-top: 80px;
   @include ms {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));

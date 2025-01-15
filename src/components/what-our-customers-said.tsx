@@ -8,7 +8,7 @@ const WhatOurCustomersSaid = () => {
         <span className="what-our-customers-said-title">What Our Happy <br /> Customers Said </span>
         <span className="what-our-customers-said-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br /> tempor incididunt ut labore et dolore magna aliqua.</span>
       </div>
-      <div className="flex gap-16 mt-80 | customer-reviews-container">
+      <div className="flex gap-16 | customer-reviews-container">
         <div className="customer-review">
           <div className="customer-review-content">
             <span className="review-content">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
