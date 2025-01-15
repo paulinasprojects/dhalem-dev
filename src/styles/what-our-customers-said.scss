@@ -27,8 +27,7 @@
   @include sm {
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 16px;
-    margin-right: 16px;
+
   }
 }
 
@@ -60,6 +59,9 @@
   font-weight: normal;
   line-height: 32px;
 
+  @include sm {
+    margin-top: 10px;
+  }
 
 }
 
