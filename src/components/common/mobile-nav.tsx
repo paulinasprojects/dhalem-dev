@@ -18,11 +18,14 @@ const MobileNav = ({isOpen}: Props) => {
       {isOpen && (
         <div className="mobile-nav-overlay">
           <div className="mobile-nav-link-container">
-          <Link to="/">test</Link>
-          <Link to="/">test</Link>
-          <Link to="/">test</Link>
-          <Link to="/">test</Link>
-          <Link to="/">test</Link>
+            <div className="mobile-nav-links-container">
+            <Link className="mobile-link" to="/">Home</Link>
+            <Link className="mobile-link" to="/listings">Listings</Link>
+            <Link className="mobile-link" to="/services">Services</Link>
+            <Link className="mobile-link" to="/about-us">About</Link>
+            <Link className="mobile-link" to="/our-team">Our Team</Link>
+            <Link className="mobile-link" to="/contact-us">Contact Us</Link>
+            </div>
           </div>
           
         </div>

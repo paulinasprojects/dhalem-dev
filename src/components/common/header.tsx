@@ -22,12 +22,12 @@ const Header = () => {
             </Link>
          </div>
          <div className='link-main-container'>
-            <Link to="/">Home</Link>
-            <Link to="/listings">Listings</Link>
-            <Link to="/services">Services</Link>
-            <Link to="/about-us">About</Link>
-            <Link to="/our-team">Our Team</Link>
-            <Link to="/contact-us">Contact Us</Link>
+            <Link className="main-link" to="/">Home</Link>
+            <Link className="main-link" to="/listings">Listings</Link>
+            <Link className="main-link" to="/services">Services</Link>
+            <Link className="main-link" to="/about-us">About</Link>
+            <Link className="main-link" to="/our-team">Our Team</Link>
+            <Link className="main-link" to="/contact-us">Contact Us</Link>
             <button className='quota-button' onClick={() => navigate("/contact-us")}>Get a Quota</button>
          </div>
          <div className='mobile-nav' onClick={handleOpen}>
