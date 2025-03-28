@@ -1,3 +1,5 @@
+import { motion, AnimatePresence } from "framer-motion";
+import { containerVariants, itemVariants } from "@/lib/constants";
 import "@/styles/listings-card.scss";
 import { useNavigate } from "react-router-dom";
 import { listingsPageData } from "@/lib/data";
@@ -5,15 +7,24 @@ import { MdLocationOn} from "react-icons/md";
 import { RiLayoutGridLine } from "react-icons/ri";
 import { FaBed } from "react-icons/fa6";
 import { MdBathtub } from "react-icons/md";
+import { useMediaQuery } from "usehooks-ts";
 
 const ListingsCard = () => {
   const navigate = useNavigate();
+  const isMobile = useMediaQuery("(max-width: 767px)");
 
   return (
-    <div className="listings-card-container">
+    <AnimatePresence initial={isMobile ? false : true}>
+    <motion.div 
+      className="listings-card-container"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{once: true, amount: 0.2}}
+      variants={containerVariants}
+    >
       <div className="listings-card-content-container">
         {listingsPageData.map((data) => (
-          <div onClick={() => navigate("/listings/1")}>
+          <motion.div onClick={() => navigate("/listings/1")} variants={itemVariants} key={data.id}>
             <div className="relative">
               <img src={data.image} alt="" className="listings-image" />
               <div className="absolute | listings-absolute-container">
@@ -51,10 +62,11 @@ const ListingsCard = () => {
                 </div>
               </div>
             </div>  
-          </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
+    </AnimatePresence>
   )
 }
 
