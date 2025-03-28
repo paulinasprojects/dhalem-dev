@@ -1,22 +1,40 @@
+import { motion } from "framer-motion";
 import { featuredListingsData } from "@/lib/data";
 import { MdLocationOn } from "react-icons/md";
 import "@/styles/featured-listings.scss";
 import { useNavigate } from "react-router-dom";
+import { containerVariants, itemVariants } from "@/lib/constants";
 
 const FeaturedListings = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="featured-listings-container">
+    <motion.div 
+      className="featured-listings-container"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{once: true, amount: 0.2}}
+      variants={containerVariants}
+      >
       <div className="featured-title-container">
-        <span className="featured-listing-title">Featured Listings</span>
-        <span className="featured-listing-description">
+        <motion.span 
+          initial={{ opacity: 0, x: -20 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }} 
+          className="featured-listing-title">Featured Listings</motion.span>
+        <motion.span 
+          initial={{ opacity: 0, x: 20 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }} 
+          className="featured-listing-description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br /> tempor incididunt ut labore et dolore magna aliqua.
-        </span>
+        </motion.span>
       </div>
       <div className="featured-listings-items-container">
         {featuredListingsData.map((item) => (
-          <div onClick={() => navigate("/listings/1")}>
+          <motion.div onClick={() => navigate("/listings/1")} variants={itemVariants} key={item.id}>
             <div className="relative | relative-container">
               <img src={item.image} alt="" className="featured-listing-image" />
               <div className="absolute | absolute-container">
@@ -30,18 +48,29 @@ const FeaturedListings = () => {
                 <span className="featured-item-location-title">{item.location}</span>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
       <div className="see-more-container">
-        <span className="see-more-title">
+        <motion.span 
+          initial={{ opacity: 0, x: -20 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }} 
+          className="see-more-title">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br /> eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </span>
-        <button className="seem-more-button">
+        </motion.span>
+        <motion.button 
+          initial={{ opacity: 0, x: 20 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }} 
+          className="seem-more-button"
+        >
           See more
-        </button>
+        </motion.button>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

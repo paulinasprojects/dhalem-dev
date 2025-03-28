@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import logo from '/logo.svg';
 import "@/styles/footer.scss";
@@ -8,7 +9,12 @@ import { IoMdMail } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <div className="footer-container">
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      transition={{ duration: 0.8, ease: "easeIn" }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }} 
+      className="footer-container">
       <div className='flex justify-between | footer-flex-container'>
         {/* Left */}
         <div className='flex-col'>
@@ -53,7 +59,7 @@ const Footer = () => {
           <button className='footer-submit-button'>Submit</button>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import "@/styles/why-choose-us.scss";
 import whychooseusimage from '/why-choose-us.png';
 import { FaCheck } from "react-icons/fa6";
@@ -7,7 +8,12 @@ const WhyChooseUs = () => {
     <div className="why-choose-us-container">
       <div className="flex | why-choose-us-content-container">
         {/* Left */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }} 
+        >
           <div className="flex-col | why-choose-us-title-container">
             <h3 className="why-choose-us-title">Why Choose Us for Your House Needs?</h3>
             <p className="why-choose-us-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -41,11 +47,16 @@ const WhyChooseUs = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
         {/*  Right */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+        >
           <img src={whychooseusimage} alt="" className="why-choose-us-image" />
-        </div>
+        </motion.div>
       </div>
     </div>
   )

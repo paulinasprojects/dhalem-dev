@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import heroimage from '/hero-image.png'
 import "@/styles/hero.scss";
 
@@ -5,7 +6,12 @@ const Hero = () => {
   return (
     <div className="hero-container">
       <div className="flex-container">
-        <div>
+        <motion.div
+           initial={{ opacity: 0, x: -20 }}
+           transition={{ duration: 0.8, ease: "easeIn" }}
+           whileInView={{ opacity: 1, x: 0 }}
+           viewport={{ once: true }} 
+        >
           <div className="text-container">
             <h1 className="hero-title">Bring Your Family's Happiness to Your Dream House</h1>
             <p className="hero-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua.</p>
@@ -28,10 +34,15 @@ const Hero = () => {
             <span className="hero-award-description">Happy Customers</span>
            </div>
           </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }} 
+        >
           <img src={heroimage} alt="" className="hero-image" />
-        </div>
+        </motion.div>
       </div>
     </div>
   )

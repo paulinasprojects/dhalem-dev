@@ -1,39 +1,67 @@
+import { motion } from "framer-motion";
+import { containerVariants, itemVariants } from "@/lib/constants";
+import { buyPropertySteps } from "@/lib/data";
 import "@/styles/buy-property-steps.scss";
 
 const BuyPropertySteps = () => {
   return (
-    <div className="buy-property-steps-container">
+    <motion.div 
+      className="buy-property-steps-container"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{once: true, amount: 0.2}}
+      variants={containerVariants}
+    >
       <div className="flex | buy-property-title-container">
-        <span className="buy-property-title">Easy Step to Buy Property on Dhalem Real Estate</span>
-        <span className="buy-property-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+        <motion.span 
+          className="buy-property-title"
+          initial={{ opacity: 0, x: -20 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }} 
+        >
+          Easy Step to Buy Property on Dhalem Real Estate
+        </motion.span>
+        <motion.span 
+         className="buy-property-description"
+         initial={{ opacity: 0, x: 20 }}
+         transition={{ duration: 0.8, ease: "easeIn" }}
+         whileInView={{ opacity: 1, x: 0 }}
+         viewport={{ once: true }}
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </motion.span>
       </div>
       <div className="flex | steps-container">
-        <div className="flex-col">
-          <span className="step-number">1.</span>
-          <span className="step-title">View Listing</span>
-          <span className="step-description">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
-        </div>
-        <div className="flex-col">
-          <span className="step-number">2.</span>
-          <span className="step-title">Contact Us</span>
-          <span className="step-description">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
-        </div>
-        <div className="flex-col">
-          <span className="step-number">3.</span>
-          <span className="step-title">Request a Visit</span>
-          <span className="step-description">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
-        </div>
-        <div className="flex-col">
-          <span className="step-number">4.</span>
-          <span className="step-title">Buy The House</span>
-          <span className="step-description">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
-        </div>
+        {buyPropertySteps.map((step) => (
+        <motion.div className="flex-col" key={step.id} variants={itemVariants}>
+          <span className="step-number">{step.step}</span>
+          <span className="step-title">{step.stepTitle}</span>
+          <span className="step-description">{step.stepDescription}</span>
+        </motion.div>
+        ))}
       </div>
       <div className="see-our-faq">
-        <span className="see-our-faq-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-        <button className="see-our-faq-button">See Our FAQ</button>
+        <motion.span 
+          className="see-our-faq-title"
+          initial={{ opacity: 0, x: -20 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }} 
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </motion.span>
+        <motion.button 
+          className="see-our-faq-button"
+          initial={{ opacity: 0, x: 20 }}
+          transition={{ duration: 0.8, ease: "easeIn" }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }} 
+        >
+          See Our FAQ
+        </motion.button>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

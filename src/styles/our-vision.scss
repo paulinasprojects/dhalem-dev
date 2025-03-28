@@ -28,6 +28,7 @@
 
 .vision-content-container {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
 
   @include md {
     gap: 48px;
@@ -78,8 +79,7 @@
 }
 
 .our-vision-image {
-  width: 488px;
-  height: 320px;
+  width: 100%;
   object-fit: cover;
   border-radius: 16px;
 

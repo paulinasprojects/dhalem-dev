@@ -163,3 +163,17 @@ input[type=number] {
   font-size: var(--small);
   margin-top: 5px;
 }
+
+.what-our-customers-said-carousel {
+  width: 100%;
+
+  .slick-prev,
+  .slcik-next  {
+    display: none !important;
+  }
+}
+
+.customers-said-carousel-slide {
+  padding: 20px;
+  border-radius: 8px;
+}

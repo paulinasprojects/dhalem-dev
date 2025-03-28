@@ -2,6 +2,7 @@ import imageone from "/featured-image-1.png";
 import imagetwo from "/featured-image-2.png";
 import imagethree from "/featured-image-3.png";
 import imagetfour from "/featured-image-4.png";
+import reviewAvatar from "/review-avatar.png";
 
 export const featuredListingsData = [
   {
@@ -324,5 +325,71 @@ export const ourTeamList = [
       "https://res.cloudinary.com/dymlzmyuo/image/upload/v1736333549/agent-8_bqey0f.png",
     name: "Erika Boyer",
     workPosition: "Staff",
+  },
+];
+
+export const buyPropertySteps = [
+  {
+    id: 441,
+    step: "1.",
+    stepTitle: "View Listing",
+    stepDescription:
+      "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+  },
+  {
+    id: 442,
+    step: "2.",
+    stepTitle: "Contact Us",
+    stepDescription:
+      "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+  },
+  {
+    id: 443,
+    step: "3.",
+    stepTitle: "Request a Visit",
+    stepDescription:
+      "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+  },
+  {
+    id: 444,
+    step: "4.",
+    stepTitle: "Buy The Property",
+    stepDescription:
+      "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+  },
+];
+
+export const whatOurCustomersSaidData = [
+  {
+    id: 1,
+    comment:
+      "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+    img: reviewAvatar,
+    name: "Shoo Phar Mhan",
+    workcompany: "Kang Masak",
+  },
+  {
+    id: 2,
+    comment:
+      "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+    img: reviewAvatar,
+    name: "Shoo Phar Mhan",
+    workcompany: "Kang Masak",
+  },
+  {
+    id: 3,
+    comment:
+      "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+    img: reviewAvatar,
+    name: "Shoo Phar Mhan",
+    workcompany: "Kang Masak",
+  },
+  {
+    id: 4,
+    comment:
+      "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+    img: reviewAvatar,
+    name: "Shoo Phar Mhan",
+    workcompany: "Kang Masak",
   },
 ];

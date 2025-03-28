@@ -74,6 +74,7 @@
     height: 240px;
     object-fit: cover;
     border-radius: 16px;
+    cursor: pointer;
 
     @include md {
       width: 400px;
