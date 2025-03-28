@@ -18,17 +18,21 @@ const FeaturedListings = () => {
       >
       <div className="featured-title-container">
         <motion.span 
+          className="featured-listing-title"
           initial={{ opacity: 0, x: -20 }}
           transition={{ duration: 0.8, ease: "easeIn" }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }} 
-          className="featured-listing-title">Featured Listings</motion.span>
+        >
+            Featured Listings
+          </motion.span>
         <motion.span 
+          className="featured-listing-description"
           initial={{ opacity: 0, x: 20 }}
           transition={{ duration: 0.8, ease: "easeIn" }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }} 
-          className="featured-listing-description">
+          >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br /> tempor incididunt ut labore et dolore magna aliqua.
         </motion.span>
       </div>

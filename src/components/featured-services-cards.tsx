@@ -1,44 +1,40 @@
+import { motion } from "framer-motion";
+import { containerVariants, itemVariants } from "@/lib/constants";
 import "@/styles/featured-services-cards.scss";
-import { FaCheck } from "react-icons/fa6";
 import services from '/services.png';
+import { featuredServicesCardData } from "@/lib/data";
+import FeaturedServicesCard from "./featured-services-card";
 
 const FeaturedServicesCards = () => {
   return (
-    <div className="featured-services-cards-container">
+    <motion.div 
+      className="featured-services-cards-container"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{once: true, amount: 0.6}}
+      variants={containerVariants}
+    >
       <div className="featured-services-steps">
-        <div className="flex-col">
-          <div className="fetured-card-icon-bg">
-            <FaCheck className="featured-card-icon"/>
-          </div>
-          <span className="featured-card-title">Residential <br /> Building</span>
-          <span className="featured-card-description">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
-        </div>
-        <div className="flex-col">
-        <div className="fetured-card-icon-bg">
-          <FaCheck className="featured-card-icon"/>
-        </div>
-          <span className="featured-card-title">Individual House <br /> Bulding</span>
-          <span className="featured-card-description">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
-        </div>
-        <div className="flex-col">
-        <div className="fetured-card-icon-bg">
-          <FaCheck className="featured-card-icon"/>
-        </div>
-          <span className="featured-card-title">Corporate <br /> Building</span>
-          <span className="featured-card-description">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
-        </div>
-        <div className="flex-col">
-        <div className="fetured-card-icon-bg">
-          <FaCheck className="featured-card-icon"/>
-          </div>
-          <span className="featured-card-title">Commercial <br /> Building</span>
-          <span className="featured-card-description">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</span>
-        </div>
+        {featuredServicesCardData.map((data) =>  (
+          <motion.div key={data.id} variants={itemVariants}>
+            <FeaturedServicesCard
+            icon={data.icon}
+            description={data.description}
+            title={data.title}
+          />
+          </motion.div>
+        ))}
       </div>
-      <div className="featured-card-services">
+      <motion.div 
+        className="featured-card-services"
+        initial={{ opacity: 0, y: 20 }}
+        transition={{ duration: 1.8, ease: "easeIn" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
         <img src={services} alt="" className="featured-card-services-image" />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   )
 }
 

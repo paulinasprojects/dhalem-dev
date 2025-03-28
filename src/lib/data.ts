@@ -1,3 +1,4 @@
+import { FaCheck } from "react-icons/fa6";
 import imageone from "/featured-image-1.png";
 import imagetwo from "/featured-image-2.png";
 import imagethree from "/featured-image-3.png";
@@ -391,5 +392,36 @@ export const whatOurCustomersSaidData = [
     img: reviewAvatar,
     name: "Shoo Phar Mhan",
     workcompany: "Kang Masak",
+  },
+];
+
+export const featuredServicesCardData = [
+  {
+    id: 1,
+    icon: FaCheck,
+    title: "Residential Building",
+    description:
+      "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+  },
+  {
+    id: 2,
+    icon: FaCheck,
+    title: "Individual House Bulding",
+    description:
+      "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+  },
+  {
+    id: 3,
+    icon: FaCheck,
+    title: "Corporate Building",
+    description:
+      "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+  },
+  {
+    id: 4,
+    icon: FaCheck,
+    title: "Commercial Building",
+    description:
+      "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
   },
 ];
